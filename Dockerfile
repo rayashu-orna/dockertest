@@ -18,4 +18,4 @@ RUN apt-get -y install git
 
 RUN git clone https://github.com/rayashu-orna/LibraryQuant.git /home/git
 
-CMD ["/bin/bash"]
+
