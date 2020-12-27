@@ -20,8 +20,6 @@ RUN apt-get -y install curl
 
 RUN git clone https://github.com/rayashu-orna/LibraryQuant.git /home/git
 
-ENV PATH="/home/git:${PATH}"
-
 COPY NAE/AppDef.json /etc/NAE/AppDef.json
 RUN curl --fail -X POST -d @/etc/NAE/AppDef.json https://api.jarvice.com/jarvice/validate
 
